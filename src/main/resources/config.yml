@@ -1,0 +1,6 @@
+# The following nerfs apply to Zombified Piglins that didn't spawn from a
+# spawn egg, spawner, or naturally, which is useful for nerfing
+# nether portal spawned Zombified Piglins:
+ZombifiedPiglinGoldIngotDropRate: 0.05
+ZombifiedPiglinGoldNuggetDropRate: 0.05
+ZombifiedPiglinExperienceDrop: 0

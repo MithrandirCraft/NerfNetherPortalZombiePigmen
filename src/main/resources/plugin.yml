@@ -1,0 +1,6 @@
+name: NerfNetherPortalZombiePigmen
+version: '${project.version}'
+main: es.mithrandircraft.NerfNetherPortalZombiePigmen
+api-version: '1.21'
+authors: [PixelRain (Mithrandir)]
+description: Nerfs drops from nether portal spawned zombie pigmen
