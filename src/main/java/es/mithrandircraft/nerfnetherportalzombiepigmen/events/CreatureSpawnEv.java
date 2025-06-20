@@ -1,5 +1,6 @@
-package es.mithrandircraft.events;
+package es.mithrandircraft.nerfnetherportalzombiepigmen.events;
 
+import es.mithrandircraft.nerfnetherportalzombiepigmen.NerfNetherPortalZombiePigmen;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
@@ -8,9 +9,9 @@ import org.bukkit.metadata.FixedMetadataValue;
 
 public class CreatureSpawnEv implements Listener {
 
-    private final es.mithrandircraft.NerfNetherPortalZombiePigmen mainClassAccess;
+    private final NerfNetherPortalZombiePigmen mainClassAccess;
 
-    public CreatureSpawnEv(es.mithrandircraft.NerfNetherPortalZombiePigmen main) { this.mainClassAccess = main; }
+    public CreatureSpawnEv(NerfNetherPortalZombiePigmen main) { this.mainClassAccess = main; }
 
     @EventHandler
     public void creatureSpawnEvent(CreatureSpawnEvent e) {

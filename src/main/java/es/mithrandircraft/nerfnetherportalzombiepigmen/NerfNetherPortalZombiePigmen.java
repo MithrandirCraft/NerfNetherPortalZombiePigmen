@@ -1,6 +1,6 @@
-package es.mithrandircraft;
+package es.mithrandircraft.nerfnetherportalzombiepigmen;
 
-import es.mithrandircraft.events.*;
+import es.mithrandircraft.nerfnetherportalzombiepigmen.events.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class NerfNetherPortalZombiePigmen extends JavaPlugin {

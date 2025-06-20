@@ -1,5 +1,6 @@
-package es.mithrandircraft.events;
+package es.mithrandircraft.nerfnetherportalzombiepigmen.events;
 
+import es.mithrandircraft.nerfnetherportalzombiepigmen.NerfNetherPortalZombiePigmen;
 import org.bukkit.Material;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
@@ -12,9 +13,9 @@ import java.util.ListIterator;
 
 public class EntityDeathEv implements Listener {
 
-    private final es.mithrandircraft.NerfNetherPortalZombiePigmen mainClassAccess;
+    private final NerfNetherPortalZombiePigmen mainClassAccess;
 
-    public EntityDeathEv(es.mithrandircraft.NerfNetherPortalZombiePigmen main) { this.mainClassAccess = main; }
+    public EntityDeathEv(NerfNetherPortalZombiePigmen main) { this.mainClassAccess = main; }
 
     @EventHandler
     public void entityDeathEv(EntityDeathEvent e) {
