@@ -4,3 +4,7 @@
 ZombifiedPiglinGoldIngotDropRate: 0.25
 ZombifiedPiglinGoldNuggetDropRate: 0.05
 ZombifiedPiglinExperienceDrop: 0
+
+# Debug:
+LogZombiePigmanSpawnOperations: false
+LogZombiePigmanDeathOperations: false

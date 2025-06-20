@@ -4,3 +4,10 @@ main: es.mithrandircraft.nerfnetherportalzombiepigmen.NerfNetherPortalZombiePigm
 api-version: '1.21'
 authors: [PixelRain (Mithrandir)]
 description: Nerfs drops from nether portal spawned zombie pigmen
+website: www.mithrandircraft.es
+commands:
+  NerfNetherPortalZombiePigmen:
+    description: Does nothing on it's own. Requires further arguments.
+    aliases: nnpzp
+  NNPZP Reload:
+    description: Will reload the plugin's configuration when specified as nnpzp argument.

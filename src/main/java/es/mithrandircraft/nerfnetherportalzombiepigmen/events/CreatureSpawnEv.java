@@ -18,12 +18,17 @@ public class CreatureSpawnEv implements Listener {
         /* NOTE: A "tag to be safe from nerf" approach was taken for Zombified Piglins as opposed to "tag to get nerfed"
          * because spigot is fucking broken, and e.getSpawnReason() will never return
          * CreatureSpawnEvent.SpawnReason.NETHER_PORTAL (SpawnReason which is this plugin's main cause for concern) */
-        if(e.getEntityType() == EntityType.ZOMBIFIED_PIGLIN
-                && (e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.NATURAL)
-                || e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.SPAWNER)
-                || e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.SPAWNER_EGG)))
+        if(e.getEntityType() == EntityType.ZOMBIFIED_PIGLIN)
         {
-            e.getEntity().setMetadata( "safe_from_nerf", new FixedMetadataValue(this.mainClassAccess, true));
+            if (mainClassAccess.getConfig().getBoolean("LogZombiePigmanSpawnOperations"))
+                System.out.println("ZOMBIFIED_PIGLIN spawn reason: " + e.getSpawnReason() + " location: " + e.getEntity().getLocation());
+
+            if ((e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.NATURAL)
+                    || e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.SPAWNER)
+                    || e.getSpawnReason().equals(CreatureSpawnEvent.SpawnReason.SPAWNER_EGG)))
+            {
+                e.getEntity().setMetadata( "safe_from_nerf", new FixedMetadataValue(this.mainClassAccess, true));
+            }
         }
     }
 }

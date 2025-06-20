@@ -21,6 +21,9 @@ public class EntityDeathEv implements Listener {
     public void entityDeathEv(EntityDeathEvent e) {
         if(e.getEntityType() == EntityType.ZOMBIFIED_PIGLIN && !e.getEntity().hasMetadata("safe_from_nerf"))
         {
+            if (mainClassAccess.getConfig().getBoolean("LogZombiePigmanDeathOperations"))
+                System.out.println("non safe_from_nerf ZOMBIFIED_PIGLIN death location: " + e.getEntity().getLocation());
+
             List<ItemStack> drops = e.getDrops();
             ListIterator<ItemStack> iter = drops.listIterator();
             while(iter.hasNext()){
